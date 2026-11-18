@@ -1,0 +1,190 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-11-18T07:07:57.369Z",
+  "item": {
+    "title": "Lake District fells · symbol studio",
+    "subtitle": "Summit height and prominence"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "map",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default",
+      "design": {
+        "schemaVersion": 1,
+        "id": "canopy",
+        "name": "Canopy",
+        "source": {
+          "kind": "built-in"
+        },
+        "sourceSha256": "e191cd560519b928107e10da8b0e188b5ae5642d15931f4afa2a22b94c6caea3",
+        "guidance": "# Canopy\n\n## Overview\n\nFor apps about living places: parks, forests, habitats, conservation areas, trails and biodiversity. The reader is exploring or caring for a place and has time to read. Calm, natural and a little literary, like a field guide or a reserve's visitor sign.\n\n## Colors\n\nDark mode is deep leaf green from edge to edge with cream text and one chartreuse signal: the whole page is the color. Light mode is warm oat paper with deep green ink, a leaf-green accent and a deep green header. Measured numbers take the accent. Greens belong to the page, so a `chart` that compares land cover or species uses `colors` chosen to stand apart from them.\n\n## Typography\n\nA humanist sans for reading under a book serif for the app title, panel titles and figures, at a generous size and line height. Name the place and the season: \"Nesting sites, spring count\". Content a behavior draws inherits the page's font and size.\n\n## Layout\n\nIn light mode the header is a deep green band: put two to four figures in the header: they stand on the fill itself, with no card of their own. a chart, a list or a selector placed there keeps a surface, so it belongs in a side panel. In dark mode figures there are cards on the green page. Side panels are cards that take the height of their content, so the map shows around them: keep each to a few blocks. The `immersive` preset suits it well, with the reserve filling the page.\n\n## Elevation & Depth\n\nFlat surfaces separated by a hairline; floating panels are slightly translucent with a soft blur, like a sign in front of the landscape.\n\n## Shapes\n\nNearly square corners on panels and blocks, with fully round chips.\n\n## Components\n\n- **KPI:** two or three figures a visitor or a ranger asks for: area protected, species recorded, trail length open.\n- **List:** sites or trails with a short description as the subtitle; a `places` block tours them.\n- **Selector:** chips for a category or a level; `steps` for an ordered sequence such as dates or phases.\n- **Chart:** sorted bars to rank, a donut only for parts of one whole.\n- **Buttons:** one primary action in a panel, labeled with a short verb.\n\n## Map\n\nImagery or a topographic basemap shows the land itself, which is the subject here. Keep overlays few and translucent so the terrain reads through them.\n\n## Do's and Don'ts\n\n- Do let the map fill the page.\n- Do write titles as a guide would say them.\n- Don't fill a panel with a bright green.\n- Don't crowd the page with more than a few blocks a panel.",
+        "tokens": {
+          "light": {
+            "background": "#f7f1df",
+            "surface": "#fdfaf0",
+            "surfaceRaised": "#eee6d1",
+            "foreground": "#072311",
+            "foregroundMuted": "#4d5d4c",
+            "border": "#c7c9b8",
+            "accent": "#1f6a19",
+            "accentHover": "#1b5d16",
+            "accentActive": "#185113",
+            "accentLabel": "#f8f5ea",
+            "chrome": "#0b3d20",
+            "chromeText": "#f7f1df",
+            "chromeAccent": "#c3dba6"
+          },
+          "dark": {
+            "background": "#001b0d",
+            "surface": "#032615",
+            "surfaceRaised": "#143423",
+            "foreground": "#eee7d8",
+            "foregroundMuted": "#93ad98",
+            "border": "#2c5440",
+            "accent": "#cae430",
+            "accentHover": "#d0e749",
+            "accentActive": "#d7ea62",
+            "accentLabel": "#012111"
+          },
+          "typography": {
+            "fontFamily": "Optima, Candara, \"Trebuchet MS\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif",
+            "displayFamily": "\"Iowan Old Style\", \"Palatino Linotype\", Palatino, Georgia, \"Microsoft YaHei\", \"PingFang SC\", serif",
+            "bodySize": 14,
+            "headingSize": 17,
+            "titleSize": 32,
+            "lineHeight": 1.5,
+            "titleWeight": 500,
+            "titleLetterSpacing": -0.005
+          },
+          "spacing": {
+            "gap": 16,
+            "padding": 16
+          },
+          "radius": 2,
+          "overlay": {
+            "opacity": 0.92,
+            "blur": 16
+          },
+          "chart": {
+            "light": [
+              "#1f6a19",
+              "#8160b5",
+              "#aa5f04",
+              "#3377be",
+              "#b3543b",
+              "#2d828a",
+              "#af4f71",
+              "#8b703a"
+            ],
+            "dark": [
+              "#cae430",
+              "#ada3ff",
+              "#888500",
+              "#59bbfb",
+              "#e4a249",
+              "#29d5e4",
+              "#f98e88",
+              "#63c98e"
+            ]
+          },
+          "style": {
+            "figures": "display",
+            "figureTone": "accent"
+          }
+        }
+      }
+    },
+    "layout": {
+      "left": {
+        "hidden": false,
+        "width": "330px",
+        "title": "Symbol controls",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "fell-color-controls",
+            "title": "Prominence color ramp"
+          }
+        ]
+      }
+    },
+    "layoutMode": "docked",
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "fell-ramp-editor",
+        "label": "Fell prominence ramp editor",
+        "bundlePath": "./runtime/behaviors/fell-ramp-editor-18bc0cb394fa8d8c.js",
+        "sourceSha256": "18bc0cb394fa8d8c60b21d1f4c31cf03280153cb1f00a5f3f28aeeafed3f7d16",
+        "modulePaths": [],
+        "config": {
+          "layerId": "1a1ed7f2224-layer-2"
+        },
+        "mounts": [
+          "fell-color-controls"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-11-18T07:12:36.177Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "c0ed19e5-2193-4c93-b8df-507285213b37",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-5b9bb63b-358b-49c6-aee4-0e8a8d2cfea7",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-11-18T07:07:57.368Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
